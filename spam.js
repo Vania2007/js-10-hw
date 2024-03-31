@@ -2,10 +2,10 @@ let str = prompt("Input string");
 function isStringSpam(str) {
   str = str.toLowerCase();
   if (str == "spam") {
-    alert("***");
+    alert(str.replace(`${str}`, "***"));
     return true;
   } else {
-    alert("false");
+    alert(str.replace(`${str}`, "false"));
     return false;
   }
 }
